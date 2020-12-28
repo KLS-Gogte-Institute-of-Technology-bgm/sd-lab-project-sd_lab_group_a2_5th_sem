@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    padding-left: 6;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.h{
+    position: relative;
+    width:  calc(1000px - 30px);
+    height: calc(100px - 30px);
+    margin-left: 150px;
+}
+.container1{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0px auto;
+    
+}
+.container1 .box{
+    position: relative;
+    width:  calc(400px - 30px);
+    height: calc(500px - 30px);
+    background: rgb(17, 1, 1);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container1 .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(214, 13, 13);
+    transition: 0.5s;
+    z-index: 1;
+}
+.container1 .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container1 .box:hover .icon .fa{
+    position:absolute;
+    top: 50%;
+    left; 50%;
+    transform: translate(29%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+.container1 .box:hover .icon .fa{
+    font-size: 50px;
+}
+.container1 .box .content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container1 .box:hover .content{
+    top: 100px;
+    opacity: 1;
+
+}
+.container1 .box .content h3{
+    margin: 0 0 10;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.container1 .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
